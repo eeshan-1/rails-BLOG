@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   #BLOG
   # post request (CREATE)
-  post '/post/add', to:'post#postOne'
+  #post '/post/add', to:'post#postOne'
+  post '/post/add' , to: 'post#addPost'
   post '/post/addMultiple', to:'post#postMultiple'
   
   # get request (READ)
